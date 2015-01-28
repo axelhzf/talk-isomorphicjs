@@ -21,7 +21,7 @@ theme: ./theme
 
 --
 
-### Definición
+### Definition
 
 iso·mor·phic (adj.)
 
