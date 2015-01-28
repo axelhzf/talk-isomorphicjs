@@ -5,23 +5,19 @@ author:
   url: http://axelhzf.com
 output: index.html
 controls: false
-style: style.css
+theme: ./theme
 --
 
 # Isomorphic JS
 
-## Compartiendo código entre cliente y servidor
+## Sharing code between server and browser
+
+[@axelhzf](http://twitter.com/axelhzf)
 
 --
+
 
 # WTF is Isomorphic JS
-
---
-
-<div style="width: 500px; margin: 0 auto;">
-<blockquote class="twitter-tweet" lang="en"><p>I may be thick, but what does isomorphic mean</p>&mdash; Horse JS (@horse_js) <a href="https://twitter.com/horse_js/status/557976031613550592">January 21, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
 
 --
 
@@ -34,11 +30,11 @@ iso·mor·phic (adj.)
 
 --
 
-# Isomorphic JS
+### Isomorphic JS
 
-## By isomorphic we mean that any given line of code (with notable exceptions) can execute both on the client and the server.
+By isomorphic we mean that any given line of code (with notable exceptions) can execute both on the client and the server.
 
-## [Defining Isomorphic Javascript](https://the-pastry-box-project.net/charlie-robbins/2014-november-5)
+[Defining Isomorphic Javascript](https://the-pastry-box-project.net/charlie-robbins/2014-november-5)
 
 --
 
@@ -151,10 +147,10 @@ function validatePassword(password) {
 ### app.js
 
 ```javascript
-var validate = require(“validate”);
+var validate = require("./validate");
 
 app.post('/form', function (req, res) {
-  validate(req.body.user, req.body.user);  
+  validate(req.body.email, req.body.password);
 
   ...
 
@@ -393,4 +389,6 @@ router
 # ![](images/meteor.png)
 
 --
+
+# Demo time
 
