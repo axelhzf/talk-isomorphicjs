@@ -384,7 +384,7 @@ code {
 
   </section>
   <section>
-    <h3 id="-por-qu-compartir-c-digo-entre-cliente-y-servidor-">¿Por qué compartir código entre cliente y servidor?</h3>
+    <h3 id="why-">Why?</h3>
 <p><img src="images/form.jpg" alt=""></p>
 
   </section>
@@ -617,47 +617,25 @@ React.render(<span class="xml"><span class="tag">&lt;<span class="title">HelloMe
 
   </section>
   <section>
-    <h3 id="sharing-routes-with-react">Sharing routes with react</h3>
-<pre><code class="lang-javascript"><span class="keyword">var</span> monorouter = require(<span class="string">'monorouter'</span>);
-<span class="keyword">var</span> reactRouting = require(<span class="string">'monorouter-react'</span>);
-
-monorouter()
-  .setup(reactRouting())
-  .route(<span class="string">'/'</span>, <span class="keyword">function</span>(req) {
-    <span class="keyword">this</span>.render(MyView);
-  })
-  .route(<span class="string">'/pets/:name/'</span>, <span class="keyword">function</span>(req) {
-    <span class="keyword">this</span>.render(PetView, {petName: req.params.name});
-  });</code></pre>
-
-  </section>
-  <section>
-    <h3 id="sharing-routes-with-react">Sharing routes with react</h3>
-<pre><code class="lang-javascript"><span class="keyword">var</span> express = require(<span class="string">'express'</span>);
-<span class="keyword">var</span> router = require(<span class="string">'./path/to/my/router'</span>);
-<span class="keyword">var</span> monorouterMiddleware = require(<span class="string">'connect-monorouter'</span>);
-
-<span class="keyword">var</span> app = express();
-app.use(monorouterMiddleware(router));
-
-<span class="keyword">var</span> server = app.listen(<span class="number">3000</span>, <span class="keyword">function</span>() {
-    console.log(<span class="string">'Listening on port %d'</span>, server.address().port);
-});</code></pre>
-
-  </section>
-  <section>
-    <h3 id="sharing-routes-with-react">Sharing routes with react</h3>
-<pre><code>router
-  .attach(document)
-  .captureClicks();</code></pre>
-
-  </section>
-  <section>
     <h1 id="isomorphic-persistence-">Isomorphic persistence?</h1>
 
   </section>
   <section>
     <h1 id="-images-meteor-png-"><img src="images/meteor.png" alt=""></h1>
+
+  </section>
+  <section>
+    <h2 id="meteor-features">Meteor features</h2>
+<ul>
+<li>Isomorphic</li>
+<li>Database Everywhere</li>
+<li>Realtime</li>
+<li>Data on the Wire</li>
+</ul>
+
+  </section>
+  <section>
+    <p><img src="images/magic.gif" alt=""></p>
 
   </section>
   <section>

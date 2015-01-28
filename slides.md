@@ -42,7 +42,7 @@ By isomorphic we mean that any given line of code (with notable exceptions) can 
 
 --
 
-### ¿Por qué compartir código entre cliente y servidor?
+### Why?
 
 ![](images/form.jpg)
 
@@ -337,56 +337,24 @@ React.renderToString(<HelloMessage name="John" />);
 
 --
 
-### Sharing routes with react
-
-```javascript
-var monorouter = require('monorouter');
-var reactRouting = require('monorouter-react');
-
-monorouter()
-  .setup(reactRouting())
-  .route('/', function(req) {
-    this.render(MyView);
-  })
-  .route('/pets/:name/', function(req) {
-    this.render(PetView, {petName: req.params.name});
-  });
-```
-
---
-
-### Sharing routes with react
-
-```javascript
-var express = require('express');
-var router = require('./path/to/my/router');
-var monorouterMiddleware = require('connect-monorouter');
-
-var app = express();
-app.use(monorouterMiddleware(router));
-
-var server = app.listen(3000, function() {
-    console.log('Listening on port %d', server.address().port);
-});
-```
-
---
-
-### Sharing routes with react
-
-```
-router
-  .attach(document)
-  .captureClicks();
-```
-
---
-
 # Isomorphic persistence?
 
 --
 
 # ![](images/meteor.png)
+
+--
+
+## Meteor features
+
+* Isomorphic
+* Database Everywhere
+* Realtime
+* Data on the Wire
+
+--
+
+![](images/magic.gif)
 
 --
 
